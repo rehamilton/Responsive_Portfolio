@@ -1,0 +1,71 @@
+/*Set background image and fonts*/
+body{
+    background-image: url("so-white.png") ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Remove margins from navbar*/
+.navbar {
+    margin:0 !important;
+    padding:0 !important
+}
+
+/*Create container to hold Name*/
+.header-container {
+    position: sticky;
+    width: 250px;
+    height: 70px ;
+    text-align: center;
+    font-size: xx-large; 
+    left: 100px;  
+    padding: 10px; 
+}
+
+/*Move navigation links to the left for better formatting*/
+nav ul {
+    position: relative;
+    right: 40px;
+}
+
+/*Add vertical divider lines between navigation links*/
+.divider-vertical {
+    height: 40px;
+    margin: 0 9px;
+    border-right: 1px solid #e6e3e352;
+    border-left: 1px solid #e6e3e352;
+}
+
+/*Create footer*/
+footer {
+    height: 50px;
+    text-align: center;
+    color: #ffffff70;
+    font-size: small;
+}
+
+/*Add top border to footer*/
+.footer-border {
+    height: 5px;
+}
+
+
+/*Changes to formatting when screen size changes*/
+@media screen and (max-width: 768px) {
+    
+    /*Change header container to take up full screen*/
+    .header-container {
+        position: sticky;
+        width: 100% ;
+        height: fit-content ;
+        text-align: center;
+        font-size: large; 
+        padding: 10px; 
+    }
+
+    /*Remove left formatting from navigation loinks to centre*/
+    nav ul {
+        position: relative;
+        right: 0;
+    }
+
+}
