@@ -4,7 +4,7 @@ Responsive Portfolio
 
 My main goal, at this point, was to stick as closely to the homework photo's as I could and to worry about personalisation once I had a better grasp on the bigger picture.
 
-The below covers some of the major styling use din creation.
+The below covers some of the major styling used during creation.
 
 ## Theme
 - The main theme was taken from Bootstrap for simplicity using the "info" theme (bg-info, text-info, etc)
