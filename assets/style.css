@@ -48,7 +48,7 @@ main .container {
 /*create box around all main content and line up wth navbar text*/
 #content-container {
     border-style: solid;
-    border-color: #e6e3e352;
+    border-color: rgb(206, 204, 204);
     background-color: white;
     padding: 0px 20px 20px 20px;
     margin: 15px
