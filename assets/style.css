@@ -107,6 +107,10 @@ h4.link-text {
 
 /*create padding around index page image to space out text*/
 .index-img {
+    margin: 10px;
+}
+
+.portfolio-img {
     width:100%;
     max-width: 300px;
 
@@ -117,9 +121,16 @@ h4.link-text {
     max-width: 300px;
 }
 
+
+
 /*Changes to formatting when screen size changes*/
 @media screen and (max-width: 768px) {
     
+    /*Centre the content container on the screen*/
+    div.container {
+        margin: auto !important;
+    }
+
     /*bring main content in line with header name (take into account column padding 15px)*/
     main .container {
         margin: 0px;
@@ -152,6 +163,11 @@ h4.link-text {
 /*Changes to formatting when screen size changes*/
 @media screen and (max-width: 640px) {
     
+    /*Centre the content container on the screen*/
+    div.container {
+        margin: auto !important;
+    }
+
     /*Change header container to take up full screen*/
     .header-container {
         position: sticky;
