@@ -2,15 +2,14 @@
 Responsive Portfolio
 
 
+My main goal, at this point, was to stick as closely to the homework photo's as I could and to worry about personalisation once I had a better grasp on the bigger picture.
 
-My main goal at this point, was to stick as closely to the homework photo's as I could and to worry about personalisation once I had a better grasp on the bigger picture.
-
-The below covers some of the major styling 
+The below covers some of the major styling use din creation.
 
 ## Theme
 - The main theme was taken from Bootstrap for simplicity using the "info" theme (bg-info, text-info, etc)
 
-Bootstrap navigation bar
+## Bootstrap navigation bar
 - flex-sm-row was used to make sure that the navigation showed as a row until the screen was small.
 - flex-row was used in the navigation list to stop it from becoming a "hamburger button".
 - A "Brand" was added containing my name and styled in line with the theme.
