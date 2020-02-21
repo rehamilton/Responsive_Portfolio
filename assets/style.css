@@ -84,19 +84,17 @@ nav ul {
 
 .col-md-9.col-sm-12 {
     padding: 0px;
-    margin: 15px;
-    
+    margin: 15px;    
 }
 
-h4 {
-    
-    width: 200px;
-    position: absolute;
-    background: #17a2b8;
+h4.link-text {    
+    position: relative;  
+    width: auto;  
     bottom: 5px;    
-    padding: 5px;       
+    padding: 5px;     
     text-align: center; 
-    color: white;     
+    color: white; 
+    background-color: #17a2b8;     
 }
 
 /*create box around all main content*/
@@ -109,13 +107,14 @@ h4 {
 
 /*create padding around index page image to space out text*/
 .index-img {
-    margin: 10px
+    width:100%;
+    max-width: 300px;
+
 }
 
-img {
-    width: 100%;
+.portfolio-link {
+    width: 100%; 
     max-width: 300px;
-    height: auto;
 }
 
 /*Changes to formatting when screen size changes*/
