@@ -67,13 +67,13 @@ main .container {
 /*Portfolio link container*/
 .portfolio-link {
     width: 100%; 
-    max-width: 300px;
+    max-width: 500px;
 }
 
 /*image on portfolio link take up full container*/
 .portfolio-img {
     width:100%;
-    max-width: 300px;  
+    max-width: 500px;
 }
 
 /*add text to portfolio links and have it respond to container size*/
@@ -84,7 +84,8 @@ h4.link-text {
     padding: 5px;     
     text-align: center; 
     color: white; 
-    background-color: #17a2b8;     
+    background-color: #17a2b8;
+    bottom: 50px;     
 }
 
 /*Create footer*/
@@ -122,25 +123,8 @@ h4.link-text {
      #index-image {
         margin: 10px;
         float: left;
-        object-fit: contain;
     }  
-
-    /*Create Navigation header container in line with theme*/
-    .header-container {
-        position: sticky;
-        width: 250px;
-        height: 70px ;
-        text-align: center;
-        font-size: large; 
-        left: 35px;  
-        padding: 10px; 
-    }
-    
-    /*move navigation links over for aesthetic reasons*/
-    nav ul {
-        position: relative;
-        right: 10px;
-    }
+       
 }
 
 /*Changes to formatting when screen size changes*/
@@ -161,15 +145,20 @@ h4.link-text {
         padding: 10px; 
     }
 
-    /*Remove left formatting from navigation links to centre*/
+    /*unset the "right" setting used for row*/
     nav ul {
         position: relative;
-        right: 0;
+        right: unset;
+}
+
+    /*Keep navbar links centred when turning to column*/
+    .navbar-nav {
+        margin: auto;
     }
 
     /*Change image to centred take up full box width*/
     #index-image {
-        margin: 10px;
+        margin: 0px 0px 10px 0px;
         width: 100%;
     }
 
@@ -186,6 +175,9 @@ h4.link-text {
     /*Unset row margin to create equal spacing*/
     .row {
         margin-top: unset;
+    }
+    .portfolio-link {
+        margin: auto;
     }
 
 }
