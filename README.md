@@ -35,3 +35,4 @@ The below covers some of the major styling used during creation.
 
 ## Issues
 - It's really not as smooth as I'd like.
+- 768px and above is md in Bootstrap so, while I have attempted to use bootstraps sm/md choices they don't excatly fit with the photo's. The col-md means that the columns don't change until 767px. So 767px will show what the photo's want for 768px. Make sense?
