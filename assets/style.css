@@ -10,7 +10,7 @@ body{
     padding:0 !important
 }
 
-/*Create container to hold Name*/
+/*Create Navigation header container in line with theme*/
 .header-container {
     position: sticky;
     width: 250px;
@@ -21,25 +21,7 @@ body{
     padding: 10px; 
 }
 
-/*add padding to main content to stop footer issues*/
-main {
-    padding-bottom: 100px;
-}
-
-
-/*bring main content in line with header name (take into account column padding 15px)*/
-main .container {
-    margin: 25px;
-}
-
-/*float image to left*/
-.index-image {
-    float: left;
-    margin: 10px;
-    max-width: auto;
-}
-
-/*Move navigation links to the left for better formatting*/
+/*move navigation links over for aesthetic reasons*/
 nav ul {
     position: relative;
     right: 40px;
@@ -53,12 +35,56 @@ nav ul {
     border-left: 1px solid #e6e3e352;
 }
 
-/*Create box around "about me"*/
-#main-container {
-    background-color: white;
-    border: #e6e3e352 2px;
+/*add padding to main content to stop footer issues*/
+main {
+    padding-bottom: 100px;
+}
+
+/*bring main content in line with header name*/
+main .container {
+    margin: 25px;
+}
+
+/*create box around all main content and line up wth navbar text*/
+#content-container {
     border-style: solid;
-    padding: 10px;
+    border-color: #e6e3e352;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    margin: 15px
+}
+
+/*create padding around index page image to space out text*/
+#index-image {
+    margin: 10px;
+}
+
+/*Use margins to create better spacing*/
+.row {
+    margin-top: 30px;
+}
+
+/*Portfolio link container*/
+.portfolio-link {
+    width: 100%; 
+    max-width: 300px;
+}
+
+/*image on portfolio link take up full container*/
+.portfolio-img {
+    width:100%;
+    max-width: 300px;  
+}
+
+/*add text to portfolio links and have it respond to container size*/
+h4.link-text {    
+    position: relative;  
+    width: auto;  
+    bottom: 5px;    
+    padding: 5px;     
+    text-align: center; 
+    color: white; 
+    background-color: #17a2b8;     
 }
 
 /*Create footer*/
@@ -77,51 +103,6 @@ nav ul {
     height: 5px;
     width: 100%;
 }
-
-.row {
-    margin-top: 30px;
-}
-
-.col-md-9.col-sm-12 {
-    padding: 0px;
-    margin: 15px;    
-}
-
-h4.link-text {    
-    position: relative;  
-    width: auto;  
-    bottom: 5px;    
-    padding: 5px;     
-    text-align: center; 
-    color: white; 
-    background-color: #17a2b8;     
-}
-
-/*create box around all main content*/
-#content-container {
-    border-style: solid;
-    border-color: #e6e3e352;
-    background-color: white;
-    padding: 0px 20px 20px 20px;
-}
-
-/*create padding around index page image to space out text*/
-.index-img {
-    margin: 10px;
-}
-
-.portfolio-img {
-    width:100%;
-    max-width: 300px;
-
-}
-
-.portfolio-link {
-    width: 100%; 
-    max-width: 300px;
-}
-
-
 
 /*Changes to formatting when screen size changes*/
 @media screen and (max-width: 768px) {
@@ -144,6 +125,7 @@ h4.link-text {
         object-fit: contain;
     }  
 
+    /*Create Navigation header container in line with theme*/
     .header-container {
         position: sticky;
         width: 250px;
@@ -154,6 +136,7 @@ h4.link-text {
         padding: 10px; 
     }
     
+    /*move navigation links over for aesthetic reasons*/
     nav ul {
         position: relative;
         right: 10px;
@@ -190,14 +173,19 @@ h4.link-text {
         width: 100%;
     }
 
+    /*Remove link*/
     #rockpaperscissors {
-        display: none;
-        
+        display: none;        
     }
 
+    /*Remove link*/
     #info-widget {
-        display: none;
-        
+        display: none;        
+    }
+
+    /*Unset row margin to create equal spacing*/
+    .row {
+        margin-top: unset;
     }
 
 }

@@ -12,13 +12,16 @@
 
 <body>
     
+    <!--Navigation bar-->
     <nav class="navbar navbar-light flex-column flex-md-row bg-white text-light border-bottom">
-            
+         
+        <!--Navigation header witgh name linking back to index page-->
         <div class="header-container bg-info">
            <a class="navbar-brand text-light font-weight-bold" id= "name" href="index.html">Roselyn Hamilton</a>
         </div>
                        
         <div class="navbar-nav">
+            <!--Navigation items with vertical lines seperating-->
             <ul class="navbar-nav flex-row">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">About</a>
@@ -36,36 +39,41 @@
         
     </nav>
 
+    <!--Main Content-->
     <main>
  
         <div class="container">
             <div class="row">
-                <div class="col-md-9 col-sm-12" id="content-container">
-
+                <!--Take up 9 columns on medium+ screens and 12 columns on smaller screens-->
+                <div class="col-md-9 col-sm-12" id="content-container">                 
                     
-                    
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <h1 class="text-info">About Me</h1>
-                                <hr>
-                            </div>
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <h1 class="text-info">About Me</h1>
+                            <hr>
                         </div>
+                    </div>
         
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">    
-                                <img 
+                    <!--Second Row-->
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">    
+                            <img 
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSziCX9HpxmxnZRnhwQyfHeZMFHGn0luZJ24MurgIO4os3PWL_g"
                                 alt= "image"
-                                class="img-responsive float-left index-img">
+                                class="img-responsive float-left"
+                                id= "index-image"
+                            >
                             
-                                <p>
+                            <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                </p>
-                            </div>
+                            </p>
                         </div>
+                    </div>
                     
                 </div>
     
+                <!--Take up 3 columns on medium+ screens and 12 columns on smaller screens-->
                 <div class="col-md-3 col-sm-0">
     
                     <div class="container">
@@ -80,7 +88,7 @@
     
     </main>
  
-        
+    <!--Sticky footer-->     
     <footer class="footer bg-secondary fixed-bottom">
             
             
